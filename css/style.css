@@ -1,0 +1,450 @@
+
+body{
+    
+    background-color: #2B2929;
+    background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+    overflow:auto;
+    clear:both;
+}
+
+.main-nav ul {
+  width: 100%;
+  text-align: center;
+}
+
+.main-header .main-nav{
+    background-color: rgba(0,0,0,0.8);    
+    border-radius: 5px;
+}
+
+.navbar .transparent .navbar-inverse .navbar-inner {
+   background: rgba(0,0,0,0.4);
+}
+
+.main-header .main-nav ul{
+    list-style: none;
+    margin:0;
+}
+
+.main-header .main-nav li{
+   color: white;
+   display: inline;
+   margin-right: 3px;   
+}
+
+.main-header .main-nav li a{
+   color: white;   
+   display: inline-block;
+   padding: 10px 20px;
+   /*height: 27px;*/
+}
+
+.main-header .main-nav .active {
+    color: red;  
+    /*height:27px;  */
+    border-bottom: none;
+}
+
+.main-nav li a:hover {
+  text-decoration: none;
+
+    border-bottom: 1px solid red;
+}  
+
+.main-nav li .active a:hover {
+  text-decoration: none;
+
+    
+}  
+
+
+a {
+  text-decoration: none;
+}
+
+#imageReplace {
+  background-image: url('../images/businessPic2.jpg');
+  /*background-repeat: no-repeat; */
+  background-size:cover;
+  
+ height: 800px;
+ -webkit-transition: background-image 0.5s ease-in-out;
+ -moz-transition: background-image 0.5s ease-in-out;
+ -o-transition: background-image 0.5s ease-in-out;
+ -ms-transition: background-image 0.5s ease-in-out;
+ transition: background-image 0.5s ease-in-out;
+}
+
+#imageTitle{
+  padding-top: 65px;
+  color: #000;
+  position: relative;
+  top: 40%; 
+}
+
+#imageCaption{
+  color: #000;
+  position: relative;
+  top: 40%; 
+}
+
+#links {
+  color: #000;
+  background-color: transparent;
+  float: right;
+  margin: 10px;
+  list-style-type: none;
+  text-align: right;
+  padding: 5px;
+  padding-top: 65px;  
+  position: relative;
+  top: 20%;
+  
+}
+
+#links .active::after {
+  content: " - ";
+  color: red;
+}
+
+
+.main_width {
+  width: 960px;
+  margin: 0px auto;
+}
+
+.carousel-caption h3 {
+  text-align: left;
+  border-bottom: 1px solid red;
+}
+
+.carousel-caption p {
+  text-align: left;
+  }
+
+.carousel-inner {
+
+}
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*#marquee article {
+  width: 600px;
+  height: 300px;
+}*/
+
+section #marquee-img {
+    width: 600PX;
+    height: 300px;
+}
+
+
+
+
+
+
+.myarrow{
+   font-family: 'Chewy', cursive;
+   text-align: center;
+   padding: 10px 20px;
+   text-decoration-color: rgb(59, 199, 232);
+   color: rgb(59, 199, 232);
+   font-size: 24px;
+}
+
+#content{
+    width: 70%;
+    float:left;
+    overflow:auto;
+    transition: width 1s;
+}
+
+#content article{
+    border-radius: 5px;
+    background: transparent;
+    overflow: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+
+#content article span{
+    font-style: italic;
+    color:#000000;
+}
+
+#content a.readmore{
+    display: block;
+    float: right;
+    color:#ffffff;
+    padding: 5px 9px;
+    background: #000000;
+    border-radius: 5px;
+}
+
+#content a.readmore:hover{
+    background:#000000;
+}
+
+#sidebar{
+    width:30%;
+    float:right;
+}
+
+#sidebar .block{
+    border-radius: 5px;
+    background: transparent;
+    overflow: auto;
+    padding: 10px 15px;
+    margin: 10px 0 0 10px;
+    font-weight: bold;
+}
+
+#news h3{
+    font-weight: bold;
+    color: red;
+}
+
+#news img  {
+   height: 250px;
+   width: 320px;
+}
+
+
+/*transition pics*/
+#marq_controls {
+  text-align:right;
+  font-weight: bold;
+}
+#marq_controls span {
+  padding-right:2em;
+  cursor:pointer;
+}
+#marqImgs {
+  /*position:fixed;*/
+  height:281px;
+  width:100%;
+  /*margin:0 auto 10px;*/
+
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+
+}
+#marqImgs img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity:0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 80%;
+  margin: auto;
+  }
+
+#marqImgs img.opaque {
+  opacity:1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1);
+}
+
+.clr{
+    clear:both;
+}
+
+
+
+#myAudio {
+ width: 100%;
+}​
+
+/*Tablet/ipads*/
+@media only screen and(min-width : 768px) and (max-width: 960px) {
+    #container{
+        width: 95%;
+    }  
+
+    .main-header .main-nav{
+        display: block;
+        transition: height 1s;
+    }
+
+    #content{
+        width: 100%;
+        float: none;
+    } 
+
+    #sidebar{
+        width: 100%;
+        float: none;
+    } 
+    #sidebar .block{
+        margin-left: 0;
+    }  
+
+    .marquee-area {
+      display: none;
+    }  
+
+
+}
+
+/*small tablets*/
+@media only screen and(min-width : 569px) and (max-width: 767px) {
+    #container{
+        width: 95%;
+
+    }
+
+   .main-header .main-nav{
+    display: block;
+    height:auto;
+    overflow: hidden;
+    width: 99%;
+    transition: width 1s;
+    }
+
+    .main-header .main-nav ul{
+        padding: 2% 1%;
+        text-align: center;
+        width: 98%;
+    }
+
+    .main-header .main-nav li{
+        float: none;
+        display: block;
+        margin-right: 0;
+        width: 100%;
+        border-bottom: 1px solid #a3293b;
+    }
+
+    .main-header .main-nav li a{
+        margin-bottom: 2px;
+        text-align: center;
+    }
+
+    .main-header .main-nav .active {
+    display: block;
+    
+}
+
+.main-header .main-nav li a:hover {
+   display: block;
+}
+
+ #sidebar{
+        width: 100%;
+        float: none;
+    } 
+    #sidebar .block {
+        margin-left: 0;
+    }   
+
+
+    .marquee-area {
+      display: none;
+    }
+
+/*smartphone*/
+@media only screen and(min-width : 240px) and (max-width: 568px) {
+    #container{
+        width: 95%;
+
+    }
+
+   .main-header .main-nav{
+    display: block;
+    height:auto;
+    overflow: hidden;
+    width: 99%;
+    }
+
+    .main-header .main-nav ul{
+        padding: 2% 1%;
+        text-align: center;
+        width: 98%;
+    }
+
+    .main-header .main-nav li{
+        float: none;
+        display: block;
+        margin-right: 0;
+        width: 100%;
+        border-bottom: 1px solid #a3293b;
+    }
+
+    .main-header .main-nav li a{
+        margin-bottom: 2px;
+        text-align: center;
+    }
+
+    .main-header .main-nav .active {
+    display: block;
+    
+}
+
+.main-header .main-nav li a:hover {
+   display: block;
+}
+
+ #sidebar{
+        width: 100%;
+        float: none;
+    } 
+    #sidebar .block {
+        margin-left: 0;
+    } 
+
+
+    .marquee-area {
+      display: none;
+    }  
+
+}
