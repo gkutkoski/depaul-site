@@ -68,10 +68,12 @@ body{
 
 a {
   text-decoration: none;
+  color:#f5f5f5;
+  font-weight: bold;
 }
 
 #imageReplace {
-  background-image: url('../images/businessPic2.jpg');
+  background-image: url('../images/businessMarquee.jpg');
   /*background-repeat: no-repeat; */
   background-size:cover;
   
@@ -84,20 +86,26 @@ a {
 }
 
 #imageTitle{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   padding-top: 65px;
-  color: #000;
+  color: white;
   position: relative;
   top: 40%; 
 }
 
 #imageCaption{
-  color: #000;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: white;
   position: relative;
   top: 40%; 
 }
 
+
+
 #links {
-  color: #000;
+  color: white;
   background-color: transparent;
   float: right;
   margin: 10px;
@@ -110,9 +118,22 @@ a {
   
 }
 
+#links .active{
+  color: white;
+  text-decoration: none;
+}
+
+#links a:hover
+    {
+        color:white;
+        text-decoration: none;
+    }
+
 #links .active::after {
   content: " - ";
   color: red;
+  font-weight: bold;
+  
 }
 
 
@@ -121,18 +142,6 @@ a {
   margin: 0px auto;
 }
 
-.carousel-caption h3 {
-  text-align: left;
-  border-bottom: 1px solid red;
-}
-
-.carousel-caption p {
-  text-align: left;
-  }
-
-.carousel-inner {
-
-}
 
 
 /*
@@ -185,9 +194,13 @@ section #marquee-img {
    font-family: 'Chewy', cursive;
    text-align: center;
    padding: 10px 20px;
-   text-decoration-color: rgb(59, 199, 232);
-   color: rgb(59, 199, 232);
+   text-decoration-color: #43D1FF;
+   color: #43D1FF;
    font-size: 24px;
+}
+
+.thumbnail a {
+  color: blue;
 }
 
 #content{
@@ -225,19 +238,6 @@ section #marquee-img {
     background:#000000;
 }
 
-#sidebar{
-    width:30%;
-    float:right;
-}
-
-#sidebar .block{
-    border-radius: 5px;
-    background: transparent;
-    overflow: auto;
-    padding: 10px 15px;
-    margin: 10px 0 0 10px;
-    font-weight: bold;
-}
 
 #news h3{
     font-weight: bold;
@@ -283,11 +283,6 @@ section #marquee-img {
   filter: alpha(opacity=0);
 }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  width: 80%;
-  margin: auto;
-  }
 
 #marqImgs img.opaque {
   opacity:1;
@@ -320,19 +315,11 @@ section #marquee-img {
         width: 100%;
         float: none;
     } 
-
-    #sidebar{
-        width: 100%;
-        float: none;
-    } 
-    #sidebar .block{
-        margin-left: 0;
-    }  
-
-    .marquee-area {
+div.marquee-area {
+      visibility: hidden;
       display: none;
     }  
-
+ 
 
 }
 
@@ -377,23 +364,16 @@ section #marquee-img {
 
 .main-header .main-nav li a:hover {
    display: block;
-}
+} 
 
- #sidebar{
-        width: 100%;
-        float: none;
-    } 
-    #sidebar .block {
-        margin-left: 0;
-    }   
-
-
-    .marquee-area {
+div.marquee-area {
+      visibility: hidden;
       display: none;
-    }
+    }  
+ 
 
 /*smartphone*/
-@media only screen and(min-width : 240px) and (max-width: 568px) {
+@media only screen and(min-width : 240px) and (max-width: 600px) {
     #container{
         width: 95%;
 
@@ -434,16 +414,9 @@ section #marquee-img {
    display: block;
 }
 
- #sidebar{
-        width: 100%;
-        float: none;
-    } 
-    #sidebar .block {
-        margin-left: 0;
-    } 
 
-
-    .marquee-area {
+    div.marquee-area {
+      visibility: hidden;
       display: none;
     }  
 
