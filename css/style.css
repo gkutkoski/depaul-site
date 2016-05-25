@@ -160,6 +160,10 @@ section #marquee-img {
   color: blue;
 }
 
+#news h2{
+    font-weight: bold;
+    color: white;
+}
 
 #news h3{
     font-weight: bold;
@@ -224,8 +228,31 @@ section #marquee-img {
 @media only screen and (max-width: 600px) {
     
 
+    /*.main-header .main-nav ul {
+      float:right;
+       margin-right: 0px;
+    }*/
+
     .marquee-area {
       display: none;
     }  
 
+    .myarrow{
+      display: none;
+    }
+
+    .collapse {
+        display: block;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+
+
 }
+
+
+
+
