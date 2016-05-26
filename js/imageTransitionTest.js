@@ -1,16 +1,3 @@
-$(document).ready(function() {
-  $("#marq_controls").on('click', 'span', function() {
-    $("#marqImgs img").removeClass("opaque");
-
-    var newImage = $(this).index();
-
-    $("#marqImgs img").eq(newImage).addClass("opaque");
-
-    $("#marq_controls span").removeClass("selected");
-    $(this).addClass("selected");
-  });
-});
-
 
 function changeImage(imageUrl, element, title, caption) {
 	    // $('#imageReplace').effect('explode',{mode:'show'},'slow');
@@ -22,3 +9,11 @@ function changeImage(imageUrl, element, title, caption) {
         
 
 	}
+
+function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}    
+
+// $(document).ready(function() {
+//     $('#focusmeplease').css({content: " - "});
+// });

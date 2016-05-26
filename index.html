@@ -3,7 +3,7 @@
 <head>
 	<title>City of Chicago</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
   <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 	
 	<link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
@@ -19,7 +19,8 @@
 
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"> -->
 <!-- <meta name="viewport" content="width=device-width, user-scalable=false"> -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		
 
@@ -28,22 +29,24 @@
   <div>
 	
 
-	
+	  <div id="container">
 		<header class="main-header">
-		<nav class="navbar transparent navbar-inverse navbar-fixed-top main-nav navbar-collapse">
-      <div class="container">
-
-			<ul id="menu">
+		<!-- <nav class="navbar transparent navbar-inverse navbar-fixed-top main-nav navbar-collapse"> -->
+      <!-- <div class="container"> -->
+    <nav class="fixed-nav-bar">
+			<ul id="menu" class="topnav">
+           <li> <a href=#> </a></li>
 				   <li> <a href="http://www.cityofchicago.org/city/en/about.html">About</a></li>
 				   <li> <a href="http://www.cityofchicago.org/city/en/svcs/find.html">Services</a></li>
 				   <li> <a class="active" href="http://www.cityofchicago.org/city/en.html">Chicago</a></li>
 				   <li> <a href="http://www.cityofchicago.org/city/en/chicagogovt.html">Government</a></li>
 				   <li> <a href="http://www.cityofchicago.org/city/en/progs.html">Programs</a></li>
+           <li class="icon"> <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">Menu</a></li>
 			  </ul>
-        </div>
+        <!-- </div> -->
 		</nav>			
 		</header>
-	
+	  </div>
 
 		<div class="marquee-area">
 			<section id="marquee-img">
@@ -52,7 +55,7 @@
                   <p></p>
                   <h4 id="imageCaption">Some of the largest companies in the world are headquartered here in Chicago.</h4>
                     <ul id="links">
-                       <li><a href="#" onclick="changeImage('./images/businessMarquee.jpg', this, 'We are a Business Friendly City', 'MOve your business to Chicago.')" class="navlink">Business</a></li>
+                       <li><a href="#" onclick="changeImage('./images/businessMarquee.jpg', this, 'We are a Business Friendly City', 'MOve your business to Chicago.')" class="navlink" id="focusmeplease">Business</a></li>
 
                        <li><a href="#" onclick="changeImage('./images/cloudgate.jpg', this, 'Come see what the City has to Offer', 'So much to see and do.')" class="navlink">Culture & Recreation</a></li>
 
@@ -98,7 +101,7 @@
         <div class="thumbnail">
           <h3>May 6, 2016</h3>
           <img src="./images/Business.jpg" alt="Business">
-          <p>Mayor Rahm Emanuel today announced three new partners have joined the city’s Small Business Opportunity Centers (SBOC) program, which now features 11 centers throughout the city. The centers help neighborhood businesses prepare to apply for a loan, identify lenders that are suited to their needs and achieve success through one-on-one financial coaching. Since its launch in 2014, the program has supported 389 neighborhood businesses and helped them secure $3.7 million in capital.</p> 
+          <p>Mayor Rahm Emanuel today announced three new partners have joined the city’s Small Business Opportunity Centers (SBOC) program, which now features 11 centers throughout the city.</p> 
         </div>
       </div>
     </article> 
@@ -109,7 +112,7 @@
         <div class="thumbnail">
         <h3>May 4, 2016</h3>
           <img src="./images/education.jpg" alt="Education">
-          <p>Mayor Rahm Emanuel and Chicago Public Schools (CPS) Chief Education Officer Dr. Janice K. Jackson today joined school and community leaders at Corliss High School to launch the newest CPS Parent University. The Parent University program was launched by the Emanuel Administration in 2015 to engage and support parents, building upon the 46 Parent Engagement Centers established since the Mayor took office. </p>
+          <p>Mayor Rahm Emanuel and Chicago Public Schools launch the newest CPS Parent University.</p>
         </div>
       </div>
     </article> 
@@ -121,7 +124,7 @@
         <div class="thumbnail">
         <h3>May 2, 2016</h3>
           <img src="./images/Construction.jpg" alt="Construction">
-          <p>Mayor Rahm Emanuel today joined the Magellan Development Group and the Beijing-based Wanda Group to announce that the 95-story Vista Tower is set to break ground this summer. Designed by award-winning architect and Chicago native Jeanne Gang, upon completion Vista Tower will be the third tallest building in Chicago. The project is expected to create more than 2,000 construction jobs and more than 500 permanent jobs and will be the largest-ever real estate investment by a Chinese company in Chicago, and one of the largest in the United States.</p>
+          <p>Mayor Rahm Emanuel today joined the Magellan Development Group and the Beijing-based Wanda Group to announce that the 95-story Vista Tower is set to break ground this summer.</p>
         </div>
       </div>
      </article>
@@ -132,7 +135,7 @@
         <div class="thumbnail">
           <h3>April 21, 2016</h3>
           <img src="./images/Chicago_Police_Patch.png" alt="Police">
-          <p>Mayor Rahm Emanuel announced today that he is appointing Eddie Johnson, the current Chief of Patrol, to serve as the Interim Superintendent of the Chicago Police Department, and is asking the Chicago Police Board to conduct a new search process later this year for the Police Superintendent position.</p>
+          <p>Mayor Rahm Emanuel announced today that he is appointing Eddie Johnson, the current Chief of Patrol, to serve as the Interim Superintendent of the Chicago Police Department.</p>
         </div>
       </div>
      </article>

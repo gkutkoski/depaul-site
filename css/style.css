@@ -15,6 +15,124 @@ body{
     clear:both;
 }*/
 
+/*  new navbar 5-24-2016*/
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  /*background-color: rgba(0,0,0,0.8);*/
+  /*background-color: #FFFFFF; */
+  opacity: 1.0; 
+  /*filter: alpha(opacity=50);*/
+}
+ 
+ul.topnav {
+  list-style-type: none;
+  /*margin: 0;*/
+  /*padding: 0;*/
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  text-align: center;
+ 
+}
+ 
+ul.topnav li {
+  float: left;
+}
+ 
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  /*transition: 0.3s;*/
+  font-size: 15px;
+  /*margin-right: 27px;*/
+}
+
+/*.main-nav li a:hover {
+  text-decoration: none;
+
+    border-bottom: 1px solid red;
+} */ 
+
+ul.topnav .active {
+    color: red;  
+    /*height:27px;  */
+
+    
+}
+
+ul.topnav a.active:hover {
+  border-bottom: none;
+
+    
+}  
+ 
+ul.topnav li a:hover {
+  background-color: #111;
+  border-bottom: 1px solid red;
+}
+ 
+ul.topnav li.icon {display: none;}
+ 
+ 
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:nth-child(4)) {display: none;}
+  /*ul.topnav li a {display: none;}*/
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+    /*padding-bottom: 20px;*/
+ 
+ 
+ 
+  }
+   ul.topnav li .active {
+    color:red;
+   text-align: center;
+   width: 100%;
+   }
+}
+ 
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li .active {
+  
+    display: none;
+  }
+ 
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+ 
+  ul.topnav.responsive li a {
+    /*display: block;*/
+    text-align: right;
+    /*padding-top: 50px;*/
+    padding:12px 0px 0px 12px;
+    overflow: auto;
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+ 
+/*  new navbar 5-24-2016*/
+
+
+
 .main-nav ul {
   width: 100%;
   text-align: center;
@@ -241,14 +359,7 @@ section #marquee-img {
       display: none;
     }
 
-    .collapse {
-        display: block;
-    }
-
-    .navbar-header {
-        display: none;
-    }
-
+    
 
 
 }
