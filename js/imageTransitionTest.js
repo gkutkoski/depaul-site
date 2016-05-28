@@ -15,5 +15,5 @@ function myFunction() {
 }    
 
 // $(document).ready(function() {
-//     $('#focusmeplease').css({content: " - "});
+//     $('#focusmeplease').css({'content: " - "'});
 // });

@@ -1,19 +1,12 @@
 
 body{
     
-    background-color: #4467A9;
+    background-color: #092863;
     background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
 }
-
-/*#container{
-    width: 80%;
-    margin: 0 auto;
-    overflow:auto;
-    clear:both;
-}*/
 
 /*  new navbar 5-24-2016*/
 
@@ -24,20 +17,16 @@ body{
   z-index: 9999;
   width: 100%;
   height: 50px;
-  /*background-color: rgba(0,0,0,0.8);*/
-  /*background-color: #FFFFFF; */
   opacity: 1.0; 
-  /*filter: alpha(opacity=50);*/
 }
  
 ul.topnav {
   list-style-type: none;
-  /*margin: 0;*/
-  /*padding: 0;*/
   overflow: hidden;
   background-color: rgba(0,0,0,0.8);
   width: 100%;
-  text-align: center;
+  text-align: left;
+  margin-right: 30px;
 
  
 }
@@ -52,22 +41,18 @@ ul.topnav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  /*transition: 0.3s;*/
   font-size: 15px;
-  /*margin-right: 27px;*/
 }
-
-/*.main-nav li a:hover {
-  text-decoration: none;
-
-    border-bottom: 1px solid red;
-} */ 
 
 ul.topnav .active {
     color: red;  
     /*height:27px;  */
 
     
+}
+
+ul.topnav .blank {
+    display: none; 
 }
 
 ul.topnav a.active:hover {
@@ -83,26 +68,7 @@ ul.topnav li a:hover {
 ul.topnav li.icon {display: none;}
  
  
-@media screen and (max-width:680px) {
-  ul.topnav li:not(:nth-child(4)) {display: none;}
-  /*ul.topnav li a {display: none;}*/
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-    /*padding-bottom: 20px;*/
- 
- 
- 
-  }
-   ul.topnav li .active {
-    color:red;
-   text-align: center;
-   width: 100%;
-   }
-}
- 
 
- 
 /*  new navbar 5-24-2016*/
 
 
@@ -153,8 +119,6 @@ ul.topnav li.icon {display: none;}
 
 .main-nav li .active a:hover {
   text-decoration: none;
-
-    
 }  
 
 
@@ -233,6 +197,7 @@ a {
   content: " - ";
   color: red;
   font-weight: bold;
+  font-size: large;
   
 }
 
@@ -290,9 +255,20 @@ section #marquee-img {
 }
 
 
-
+@media screen and (max-width:768px) {
+  ul.topnav li:not(:nth-child(4)) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+   ul.topnav li .active {
+    color:red;
+   text-align: center;
+   width: 100%;
+   }
+}
 /*smartphone*/
-@media screen and (max-width:680px) {
+@media screen and (max-width:768px) {
   ul.topnav.responsive {position: relative;}
   ul.topnav.responsive li.icon {
     position: absolute;
@@ -319,13 +295,8 @@ section #marquee-img {
     margin-bottom: 25px;
   }
 }
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 768px) {
     
-
-    /*.main-header .main-nav ul {
-      float:right;
-       margin-right: 0px;
-    }*/
 
     .marquee-area {
       display: none;
