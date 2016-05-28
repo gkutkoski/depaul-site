@@ -235,16 +235,19 @@ section #marquee-img {
 }
 
 #news h2{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-weight: bold;
     color: white;
 }
 
 #news h3{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-weight: bold;
     color: red;
 }
 
 #news img  {
+
    height: 250px;
    width: 320px;
 }
